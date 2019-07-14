@@ -14,7 +14,7 @@ function requestAjax(endPoint, method, data={},
 }
 
 function GET(endPoint, onSuccess=undefined, onError=undefined){
-    requestAjax(endPoint, "GET", onSuccess, onError)
+    requestAjax(endPoint, "GET", undefined, onSuccess, onError)
 }
 
 function POST(endPoint, data=undefined, onSuccess=undefined, onError=undefined){
