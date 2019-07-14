@@ -20,8 +20,15 @@
     </div>
   </div>
 
-	<input id="uploadFile" type="file" />
-<!-- PUT SHIT HERE -->
+  <form id="#fileUploadForm" action="#" method="">
+    <label class="btn btn-default btn-file">
+      Browse 
+      <input id="fileUpload" type="file" style="display: none;" />
+      <input id="exp_date" type="text" hidden/>
+      <input id="tags" type="text" hidden/>
+      <input id="user_uuid" type="text" hidden/>
+    </label>
+  </form>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
