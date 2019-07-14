@@ -20,13 +20,13 @@
     </div>
   </div>
 
-  <form id="#fileUploadForm" action="#" method="">
+  <form id="#fileUploadForm" action="#" method="POST" enctype="multipart/form-data">
     <label class="btn btn-default btn-file">
       Browse 
-      <input id="fileUpload" type="file" style="display: none;" />
-      <input id="exp_date" type="text" hidden/>
-      <input id="tags" type="text" hidden/>
-      <input id="user_uuid" type="text" hidden/>
+      <input id="fileUpload" type="file" name="image" style="display: none;" />
+      <input id="exp_date" type="text" name="exp_date" hidden/>
+      <input id="tags" type="text" name="tags" hidden/>
+      <input id="user_uuid" type="text" name="user_uuid" hidden/>
     </label>
   </form>
 

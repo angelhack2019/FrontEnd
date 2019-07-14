@@ -1,3 +1,17 @@
+function PostFile(endPoint, data={}, 
+    onSuccess=function(data){console.log(JSON.stringify(data))}, 
+    onError=function(request){console.log(JSON.stringify(request))}){
+    $.ajax({
+        url: endPoint,
+        method: "POST",
+        data: data,
+        processData: false,
+        contentType: false,
+        success: onSuccess,
+        error: onError
+    });
+}
+
 function requestAjax(endPoint, method, data={}, 
     onSuccess=function(data){console.log(JSON.stringify(data))}, 
     onError=function(request){console.log(JSON.stringify(request))}){
