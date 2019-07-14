@@ -99,7 +99,20 @@ p {
   overflow: scroll;
 }
 
+/*
 .topnav input[type=text] {
     text-align: center;
     border: 1px solid #ccc;
+}*/
+
+.topnav input[type=text] {
+    width: 50%;
+    display: inline-block;
+    position: absolute;
+    float: left;
+    text-align: center;
+    top: 100px; 
+
+    vertical-align:middle;
+    border: 2px solid #f17fb8;
 }
